@@ -9,7 +9,7 @@ import { faGear, faFlag, faCircleQuestion, faMessage, faLightbulb, faClapperboar
 const Youtube = () => {
     const [sidebar_content, setNavCollapse] = useState(true)
     const [maindivv, setContentCollapsed] = useState(false);
-    const [collapseDiv,setCollapseDiv]=useState(false)
+    const [collapseDiv, setCollapseDiv] = useState(false)
     const showSideBar = () => {
         setNavCollapse(!sidebar_content)
         setContentCollapsed(!maindivv)
@@ -20,7 +20,7 @@ const Youtube = () => {
             <div className='nav-div'>
                 <nav className='nav'>
                     <div className='yimage'>
-                        <i id='bars' className='pi pi-bars' style={{ marginTop: "20px", paddingRight: "20px", marginLeft: "30px", cursor: "pointer" }} onClick={showSideBar} />
+                        <i id='bars' className='pi pi-bars' style={{ marginTop: "20px", paddingRight: "20px", marginLeft: "10px", cursor: "pointer" }} onClick={showSideBar} />
                         <a href='#'><img src={im} className='you-image'></img></a></div>
                     <div className='search'>
                         <input type="search" placeholder='search' className='inputt' />
@@ -28,7 +28,7 @@ const Youtube = () => {
                     </div>
 
                     <button class="rounded-circle"><FontAwesomeIcon icon={faMicrophone} style={{ marginTop: "8px" }} /></button>
-                    <ul>
+                    <ul className='profile'>
                         <li><i className='pi pi-video ' style={{ scale: "1.3" }} /></li>
                         <li><i className='pi pi-bell' style={{ fontSize: "1.4rem" }} /></li>
                         <li><img src='https://images.pexels.com/photos/33045/lion-wild-africa-african.jpg?auto=compress&cs=tinysrgb&w=1600' style={{ width: "30px", height: "30px", marginTop: "1px", borderRadius: "50px", gap: "10px" }} /></li>
@@ -42,7 +42,7 @@ const Youtube = () => {
                         <button class="btn "><i className='pi pi-history ' style={{ float: "left", marginTop: "4px", scale: "1.3", marginRight: "25px" }} />Shorts</button>
                         <button class="btn "><img src='https://cdn.icon-icons.com/icons2/3237/PNG/512/menu_youtube_social_media_subs_subscription_icon_197393.png' style={{ width: "20px", marginRight: "19px" }} />Subscription</button>
                         <hr className='horizontal' />
-                        <button class="btn"><img src='https://static.vecteezy.com/system/resources/previews/011/994/022/original/simple-video-library-icon-sign-design-free-png.png' style={{ width: "20px" ,marginRight:"19px" }} />Library</button>
+                        <button class="btn"><img src='https://static.vecteezy.com/system/resources/previews/011/994/022/original/simple-video-library-icon-sign-design-free-png.png' style={{ width: "20px", marginRight: "19px" }} />Library</button>
                         <button class="btn"><i className='pi pi-history ' style={{ marginTop: "4px", scale: "1.3", marginRight: "25px" }} />History</button>
                         <button class="btn"><i className='pi pi-video ' style={{ marginTop: "4px", scale: "1.3", marginRight: "25px" }} />Your Videos</button>
                         <button class="btn"><i className='pi pi-clock ' style={{ marginTop: "4px", scale: "1.3", marginRight: "25px" }} />Watch Later</button>
@@ -71,10 +71,10 @@ const Youtube = () => {
                         <button type="button" class="btn"><FontAwesomeIcon icon={faFlag} style={{ scale: "1.5", marginRight: "25px" }} />Report History</button>
                         <button type="button" class="btn"><FontAwesomeIcon icon={faCircleQuestion} style={{ scale: "1.5", marginRight: "25px" }} />Help</button>
                         <button type="button" class="btn"><FontAwesomeIcon icon={faMessage} style={{ scale: "1.5", marginRight: "25px" }} />Send Feedback</button>
-                        <hr className='horizontal'/>    
+                        <hr className='horizontal' />
                         <button className='btn text-muted'><p>About press copyright contact Us creators Advertise Developers</p></button>
                         <button className='btn text-muted'><p>Terms Privacy Policy&safety How Youtube works Test new Features</p></button>
-                        <small className='text-muted'style={{paddingLeft:"20px"}}>2023 Google LLC</small>
+                        <small className='text-muted' style={{ paddingLeft: "20px" }}>2023 Google LLC</small>
                     </div>
 
                 </div>
@@ -100,7 +100,6 @@ const Youtube = () => {
                         <button class="btn">Watched</button>
                         <button className='btn'>Hii</button>
                         <button className='btn'>Hii</button>
-                        {/* <button className='btn'>Hii</button> */}
                     </div>
                     <div className='images'>
                         <div className="cardd" >
@@ -129,8 +128,8 @@ const Youtube = () => {
                                 </div>
                                 <div style={{ width: "300px", fontWeight: "bolder" }}>
                                     <span>Talvar movie release</span><br></br>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
-                                    <span className='text-muted'>1.8M views.18 hours ago</span>
+                                    <span className='text-muted'>Deepthi Susaina</span><br></br>
+                                    <span className='text-muted'>2M views * 24 hours ago</span>
                                 </div>
                                 <div style={{ marginRight: "-46px", marginTop: "2px" }}>
                                     <FontAwesomeIcon icon={faEllipsisVertical} />
@@ -146,8 +145,8 @@ const Youtube = () => {
                                 </div>
                                 <div style={{ width: "300px", fontWeight: "bolder" }}>
                                     <span>Student Episode 1|| Shunmukh Jeswant</span><br></br>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
-                                    <span className='text-muted'>1.8M views.18 hours ago</span>
+                                    <span className='text-muted'>Don't Peek</span><br></br>
+                                    <span className='text-muted'>1M views * 22 hours ago</span>
                                 </div>
                                 <div style={{ marginRight: "-46px", marginTop: "2px" }}>
                                     <FontAwesomeIcon icon={faEllipsisVertical} />
@@ -164,7 +163,7 @@ const Youtube = () => {
                                 </div>
                                 <div style={{ width: "300px", fontWeight: "bolder" }}>
                                     <span>react JS Live coding Interview 2023</span><br></br>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
+                                    <span className='text-muted'></span><br></br>
                                     <span className='text-muted'>1.8M views.18 hours ago</span>
                                 </div>
                                 <div style={{ marginRight: "-46px", marginTop: "2px" }}>
@@ -182,8 +181,8 @@ const Youtube = () => {
                                 </div>
                                 <div style={{ width: "300px", fontWeight: "bolder" }}>
                                     <span>How to MAke GLITTER textures From Scratch</span><br></br>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
-                                    <span className='text-muted'>1.8M views.18 hours ago</span>
+                                    <span className='text-muted'>The Grapes of Math</span><br></br>
+                                    <span className='text-muted'>3M views.20 hours ago</span>
                                 </div>
                                 <div style={{ marginRight: "-46px", marginTop: "2px" }}>
                                     <FontAwesomeIcon icon={faEllipsisVertical} />
@@ -199,8 +198,8 @@ const Youtube = () => {
                                 </div>
                                 <div style={{ width: "300px", fontWeight: "bolder" }}>
                                     <span>How to maek a website with Login and Register</span><br></br>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
-                                    <span className='text-muted'>1.8M views.18 hours ago</span>
+                                    <span className='text-muted'>Simplilearn</span><br></br>
+                                    <span className='text-muted'>4M views * 5 hours ago</span>
                                 </div>
                                 <div style={{ marginRight: "-46px", marginTop: "2px" }}>
                                     <FontAwesomeIcon icon={faEllipsisVertical} />
@@ -216,8 +215,8 @@ const Youtube = () => {
                                 </div>
                                 <div style={{ width: "300px", fontWeight: "bolder" }}>
                                     <span>Dear Kavya | season 1|Telugu Full movie</span><br></br>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
-                                    <span className='text-muted'>1.8M views.18 hours ago</span>
+                                    <span className='text-muted'>Short Films</span><br></br>
+                                    <span className='text-muted'>100 views * 15 hours ago</span>
                                 </div>
                                 <div style={{ marginRight: "-46px", marginTop: "2px" }}>
                                     <FontAwesomeIcon icon={faEllipsisVertical} />
@@ -233,25 +232,8 @@ const Youtube = () => {
                                 </div>
                                 <div style={{ width: "300px", fontWeight: "bolder" }}>
                                     <span>The Hindu september 2023 Newspaper client</span><br></br>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
-                                    <span className='text-muted'>1.8M views.18 hours ago</span>
-                                </div>
-                                <div style={{ marginRight: "-46px", marginTop: "2px" }}>
-                                    <FontAwesomeIcon icon={faEllipsisVertical} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="cardd" >
-                            <img className="cardd-image" src="https://cdn.newsnationtv.com/resize/460_-/images/2023/09/05/bharat-india-54.jpg" alt="Card image cap" />
-                            <div className="card-body" style={{ display: "flex" }} >
-                                <div>
-                                    <img src='https://yt3.googleusercontent.com/1D5I_4CS3XlJIG0F7jl0cs1IF0nj6gUZq6wrBuGsCO50q4f8ctojQcO5iL9jCKshyXCeLgBgeA=s176-c-k-c0x00ffffff-no-rj' style={{ width: "40px", height: "40px", borderRadius: "50%", marginTop: "6px" }} />
-
-                                </div>
-                                <div style={{ width: "300px", fontWeight: "bolder" }}>
-                                    <span>India vs Bharat row gets bigger:BJP keeps doing this to wipe open</span>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
-                                    <span className='text-muted'>1.8M views.18 hours ago</span>
+                                    <span className='text-muted'>NewsNow Network</span><br></br>
+                                    <span className='text-muted'>2M views * 3 hours ago</span>
                                 </div>
                                 <div style={{ marginRight: "-46px", marginTop: "2px" }}>
                                     <FontAwesomeIcon icon={faEllipsisVertical} />
@@ -267,8 +249,8 @@ const Youtube = () => {
                                 </div>
                                 <div style={{ width: "300px", fontWeight: "bolder" }}>
                                     <span>Salaaar teaser review:Prabhas' film|| Salaaar movie teaser</span><br></br>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
-                                    <span className='text-muted'>1.8M views.18 hours ago</span>
+                                    <span className='text-muted'>Filmi Keeda</span><br></br>
+                                    <span className='text-muted'>8,000 views * 3 hours ago</span>
                                 </div>
                                 <div style={{ marginRight: "-46px", marginTop: "2px" }}>
                                     <FontAwesomeIcon icon={faEllipsisVertical} />
@@ -284,7 +266,8 @@ const Youtube = () => {
                                 </div>
                                 <div style={{ width: "300px", fontWeight: "bolder" }}>
                                     <span>Darling Movie|| Prabhas || Kajal Agarwal</span><br></br>
-                                    <span className='text-muted'>Shanmukh Jeswant</span><br></br>
+                                    <span className='text-muted'>
+                                        HarmonicJourney</span><br></br>
                                     <span className='text-muted'>1.8M views.18 hours ago</span>
                                 </div>
                                 <div style={{ marginRight: "-46px", marginTop: "2px" }}>
@@ -327,34 +310,106 @@ const Youtube = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="cardd" >
+                            <img className="cardd-image" src="https://wallpapercave.com/wp/wp5409646.jpg" alt="Card image cap" />
+                            <div className="card-body" style={{ display: "flex" }} >
+                                <div>
+                                    <img src='https://c4.wallpaperflare.com/wallpaper/919/973/235/sanam-teri-kasam-2016-wallpaper-preview.jpg' style={{ width: "40px", height: "40px", borderRadius: "50%", marginTop: "6px" }} />
+
+                                </div>
+                                <div style={{ width: "300px", fontWeight: "bolder" }}>
+                                    <span>Sanam Teri Kasam | Superhit Hindi Full Romantic Movie | Harshvardhan Rane | Mawra Hocane</span><br></br>
+                                    <span className='text-muted'>Deepthi Sunanina</span><br></br>
+                                    <span className='text-muted'>2.5M views * 1 hours ago</span>
+                                </div>
+                                <div style={{ marginRight: "-46px", marginTop: "2px" }}>
+                                    <FontAwesomeIcon icon={faEllipsisVertical} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="cardd" >
+                            <img className="cardd-image" src="https://m.media-amazon.com/images/M/MV5BZGE2YjBjOTUtMzNmMy00YzM0LTg5Y2MtYmNmZTY2YTA5YjQxXkEyXkFqcGdeQXVyOTA3MTM0MTM@._V1_.jpg" alt="Card image cap" />
+                            <div className="card-body" style={{ display: "flex" }} >
+                                <div>
+                                    <img src='https://www.passionateinmarketing.com/wp-content/uploads/2022/08/1170x658_593933473.jpg' style={{ width: "40px", height: "40px", borderRadius: "50%", marginTop: "6px" }} />
+
+                                </div>
+                                <div style={{ width: "300px", fontWeight: "bolder" }}>
+                                    <span>Anand(2004 film)</span><br></br>
+                                    <span className='text-muted'>Telugu movies</span><br></br>
+                                    <span className='text-muted'>2.2M views * 2 hours ago</span>
+                                </div>
+                                <div style={{ marginRight: "-46px", marginTop: "2px" }}>
+                                    <FontAwesomeIcon icon={faEllipsisVertical} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="cardd" >
+                            <img className="cardd-image" src="https://static.toiimg.com/thumb/msid-82760290,imgsize-784749,width-400,resizemode-4/82760290.jpg" alt="Card image cap" />
+                            <div className="card-body" style={{ display: "flex" }} >
+                                <div>
+                                    <img src='https://resizing.flixster.com/--bh1qgiGCDgfEsXAt7Hj14XqXg=/300x300/v2/https://flxt.tmsimg.com/assets/p10698533_i_h9_ab.jpg' style={{ width: "40px", height: "40px", borderRadius: "50%", marginTop: "6px" }} />
+
+                                </div>
+                                <div style={{ width: "300px", fontWeight: "bolder" }}>
+                                    <span>Godavari full length movie(2005)|| sumanth|| Kamilini Mukharthiji||</span><br></br>
+                                    <span className='text-muted'>Telugu movies special</span><br></br>
+                                    <span className='text-muted'>10M views * 1 year ago</span>
+                                </div>
+                                <div style={{ marginRight: "-46px", marginTop: "2px" }}>
+                                    <FontAwesomeIcon icon={faEllipsisVertical} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="cardd" >
+                            <img className="cardd-image" src="https://m.media-amazon.com/images/M/MV5BZjM5MDMyZmMtNDJjNy00YTFhLWE5YjQtMDk4N2JjM2YxMDdjXkEyXkFqcGdeQXVyNjQ1MDcxNzM@._V1_FMjpg_UX1000_.jpg" alt="Card image cap" />
+                            <div className="card-body" style={{ display: "flex" }} >
+                                <div>
+                                    <img src='https://upload.wikimedia.org/wikipedia/commons/b/b3/Aha_OTT_Logo.svg' style={{ width: "40px", height: "40px", borderRadius: "50%", marginTop: "6px" }} />
+
+                                </div>
+                                <div style={{ width: "300px", fontWeight: "bolder" }}>
+                                    <span>Ninnu Kori full Length movie || Natural start Nani || Nivedha || </span><br></br>
+                                    <span className='text-muted'>Aha Creations</span><br></br>
+                                    <span className='text-muted'>15M views * 5 year ago</span>
+                                </div>
+                                <div style={{ marginRight: "-46px", marginTop: "2px" }}>
+                                    <FontAwesomeIcon icon={faEllipsisVertical} />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div  id="msidebar"className={collapseDiv ? "newContent active" :"newContent"}>
-                <div className='collapse-divCon'>
-                    <button>
-                    <i className='pi pi-home ' />
-                    <h6>Home</h6></button>
-                </div>
-                <div className='collapse-divCon'>
-                    <button>
-                    <i className='pi pi-video ' />
-                    <h6>shorts</h6></button>
-                </div>
-                <div className='collapse-divCon'>
-                    <button>
-                    <FontAwesomeIcon icon={faFileVideo} />
-                    <h6>Subscription</h6></button>
-                </div>
-                <div className='collapse-divCon'>
-                    <button>
-                    <img src='https://static.vecteezy.com/system/resources/previews/011/994/022/original/simple-video-library-icon-sign-design-free-png.png' style={{ width: "25px" }} />
-                    <h6>library</h6></button>
-                </div>
-                <div className='collapse-divCon'>
-                    <button>
-                    <i className='pi pi-arrow-down ' />
-                    <h6>Downloads</h6></button>
+            <div id="msidebar" className={collapseDiv ? "newContent active" : "newContent"}>
+                <div className='minisidebar'>
+                    <div className='side2'>
+                        <div className='collapse-divCon'>
+                            <button>
+                                <i className='pi pi-home ' />
+                                <h6>Home</h6></button>
+                        </div>
+                        <div className='collapse-divCon'>
+                            <button>
+                                <i className='pi pi-video ' />
+                                <h6>shorts</h6></button>
+                        </div>
+                        <div className='collapse-divCon'>
+                            <button>
+                                <FontAwesomeIcon icon={faFileVideo} />
+                                <h6>Subscription</h6></button>
+                        </div>
+                        <div className='collapse-divCon'>
+                            <button>
+                                <img src='https://static.vecteezy.com/system/resources/previews/011/994/022/original/simple-video-library-icon-sign-design-free-png.png' style={{ width: "25px" }} />
+                                <h6>library</h6></button>
+                        </div>
+                        <div className='collapse-divCon'>
+                            <button>
+                                <i className='pi pi-arrow-down ' />
+                                <h6>Downloads</h6></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
