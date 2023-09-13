@@ -115,6 +115,7 @@
     width: 350px;
     margin-top: 10px;
     margin-right: 5px;
+    object-fit: fill;
 
 }
 .images{
@@ -146,6 +147,7 @@
 .buttons button:hover{
      background-color: rgb(156, 153, 153); 
      cursor: pointer; 
+     color: white;
     /* box-shadow: 20px 20px 20px 20px; */
 }
 
@@ -163,7 +165,7 @@
 .cardd-image{
     width: 300px;
     margin-top: 0px;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 200px;
     /* border: 2px solid red; */
     /* border-radius: 10px 20px 10px 10px; */
@@ -233,29 +235,8 @@
     left:-100%;
     transition: transform 350ms;
     margin-top: 70px; 
-    /* background-color: aquamarine; */
 }
-/* @media screen and (min-width:1200px){
-    .inputt{
-        width:500px;
-        margin-left: 30px;
-    }
-    .rounded-circle{
-        margin-left: -200px;
-    }
-}
-@media screen and (min-width:768px){
-    .inputt{
-        width:200px;
-        margin-left: -200px;
-    }
-}
-@media screen and(min-width:600px){
-    .inputt{
-        width:200px;
-        margin-left: -100px;
-    }
-} */
+
 @media screen and (max-width:450px){
     .inputt{
         margin-left: -20px;
@@ -263,11 +244,6 @@
         height: 30px;
         margin-top: 5px;
 
-    }
-    .rounded-circle{
-        margin-left:-px;
-        width: 30px;
-        height: 30px;
     }
     .nav ul{
         gap:4px
@@ -299,12 +275,13 @@
     }
     .inputt{
         width: 400px;
-        margin-left: -300px;
+        margin-left: -400px;
         margin-top: 18px;
     }
     .rounded-circle{
-        margin-top: 20px;
-        margin-right:-250px;
+        margin-top: 18px;
+        width: 30px;
+        height: 30px;
     }
     .nav ul{
         gap:25px;
@@ -313,12 +290,10 @@
     .images > .cardd{
         margin-right: 0px;
         margin:40px;
+        justify-content: center;
     }
-    .images img{
-        width: 400px;
-        margin-top: 10px;
-        margin-right: 10px;
-    
+    .yimage{
+        margin-left: 5px;
     }
     
 }
@@ -337,6 +312,12 @@
         gap: 25px;
         margin-top: 10px;
     }
+    .images > .cardd{
+        margin-right: 0px;
+        margin:40px;
+        justify-content: center;
+    }
+    
 }
 @media screen and (max-width:1400px){
     .sidebar_container{
@@ -347,10 +328,36 @@
         margin-left: -300px;
     }
     .rounded-circle{
-        margin-right: -180px;
+        margin-right: -250px;
     }
     .nav ul{
         gap:25px;
     }
-
+    .profile{
+        margin-right: 60px;
+    }
+    .yimage{
+        margin-left: 10px;
+    }
+}
+@media screen and (min-width:1440px){
+    /* .sidebar_container{
+        display: none;
+    } */
+    .inputt{
+        width:500px;
+        margin-left: -120px;
+    }
+    .rounded-circle{
+        margin-right: -200px;
+    }
+    .minisidebar{
+        display: block;
+    }
+    .profile{
+        margin-right: 80px;
+    }
+    .yimage{
+        margin-left: 20px;
+    }
 }
